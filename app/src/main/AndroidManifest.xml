@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="huzy.jdhau.jomayi.huzykamz.drawer" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- GCM requires a Google account. -->
+
+    <!-- GCM connects to Google Services. -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="huzy.jdhau.jomayi.huzykamz.drawer.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="huzy.jdhau.jomayi.huzykamz.drawer.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BuyLandOne"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".ContactUs"></activity>
+        <activity android:name=".Suggestions"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Rent"></activity>
+        <activity android:name=".Sell"></activity>
+        <activity android:name=".BuyApartmentsOne"></activity>
+        <activity android:name=".BuyApartmentsTwo"></activity>
+        <activity android:name=".BuyApartmentsThree"></activity>
+        <activity android:name=".BuyLandThree"></activity>
+        <activity android:name=".BuyLandTwo"></activity>
+        <activity android:name="buy.sell.main.RentMain"></activity>
+        <activity android:name="com.information.BuyLandInformation"></activity>
+        <activity android:name=".BuyHouseOne"></activity>
+        <activity android:name=".BuyHouseThree"></activity>
+        <activity android:name=".BuyHouseTwo"></activity>
+        <activity android:name="com.information.BuyApartmentsInformation"></activity>
+        <activity android:name="com.information.BuyHouseInformation"></activity>
+        <activity android:name="rent.main.RentHouseOne"></activity>
+        <activity android:name="rent.main.RentHouseTwo"></activity>
+        <activity android:name="buy.sell.main.BuyMain"></activity>
+        <activity android:name="rent.main.RentApartmentsOne"></activity>
+        <activity android:name="rent.main.RentApartmentsTwo"></activity>
+        <activity android:name="book.property.ReserveProperty"/>
+        <activity android:name="notifications.Alert"></activity>
+
+
+
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="huzy.jdhau.jomayi.huzykamz.drawer" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+        <service android:name="com.pushbots.push.GCMIntentService" />
+
+    </application>
+
+</manifest>

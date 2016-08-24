@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="330dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        card_view:cardCornerRadius="9dp"
+        card_view:cardBackgroundColor="#e5d2ec"
+        android:layout_weight="0.23">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:gravity="center"
+
+                android:id="@+id/flag"
+
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.94"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_weight="0.44">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="District:"
+                            android:textColor="#000000"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textStyle="bold"
+                            android:id="@+id/textView8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#287112"
+                            android:text="New Text"
+                            android:id="@+id/district" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:layout_height="wrap_content"
+                            android:text="Area:"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:id="@+id/textView11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:textStyle="bold"
+                            android:textColor="#287112"
+                            android:id="@+id/area" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.44">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rooms:"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:id="@+id/textView16" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:paddingRight="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#287112"
+                            android:id="@+id/acres" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="174dp"
+                    android:layout_height="84dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.51">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PropertyType:"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:paddingRight="20dp"
+                            android:id="@+id/textView13" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:textStyle="bold"
+                            android:textColor="#287112"
+                            android:id="@+id/property" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.51">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price:"
+                            android:paddingRight="7dp"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:id="@+id/textView15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Text"
+                            android:textStyle="bold"
+                            android:textColor="#540b0b"
+                            android:id="@+id/price" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

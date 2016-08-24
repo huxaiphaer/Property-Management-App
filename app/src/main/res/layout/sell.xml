@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:orientation="vertical"
+        android:layout_height="498dp"
+        android:layout_weight="1.88">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Personal Information"
+    android:id="@+id/textView7"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    android:layout_gravity="center_horizontal" />
+
+<EditText
+    android:layout_width="386dp"
+    android:hint="Enter your name"
+    android:layout_height="wrap_content"
+    android:id="@+id/name_sell"
+    android:layout_gravity="center_horizontal" />
+
+<EditText
+    android:layout_width="391dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/email_sell"
+    android:hint="Enter your email"
+    android:layout_gravity="center_horizontal" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/phoneNumber_sell"
+    android:hint="Enter your Phone Number"
+    android:layout_gravity="center_horizontal" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/address_sell"
+    android:hint="Enter your Address"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Select Gender"
+    android:textColor="#000000"
+    android:id="@+id/h"
+    android:layout_gravity="center_horizontal" />
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="27dp"
+    android:id="@+id/spinner_gender"
+    android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    >
+
+</View>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Property Information"
+    android:id="@+id/textView9"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:layout_gravity="center_horizontal" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Property Type"
+            android:textStyle="italic"
+            android:id="@+id/textView8"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:id="@+id/spinner_propertyType"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Attach a photo of the property"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:id="@+id/textView11"
+            android:layout_gravity="center_horizontal" />
+
+         <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/upload_image"
+            android:background="#bab2af"
+             android:src="@drawable/add_photo"
+            android:onClick="OnUploadImage"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_sell"
+            android:hint="Description"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Information"
+            android:id="@+id/sendInfor_sell"
+            android:background="#7b020a"
+          android:onClick="SendInformation"
+            android:textColor="#ffffff"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

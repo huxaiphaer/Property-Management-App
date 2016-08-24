@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for using our App"
+        android:id="@+id/textView4"
+        android:paddingTop="50dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggestion"
+        android:hint="Type in  your Suggestion"
+        android:layout_gravity="center_horizontal" />
+
+    <text.customisation.MarigoldText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:textSize="24dp"
+        android:paddingRight="50dp"
+        android:textColor="#000000"
+        android:text="Your suggestion will be considered thanks so much for supporting Jomayi property Consultants."
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="  @jauharahbuki"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:id="@+id/textView6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send your Suggestion"
+            android:textColor="#ffffff"
+            android:background="#7b020a"
+            android:id="@+id/button"
+            android:onClick="Suggest"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp" />
+    </RelativeLayout>
+</LinearLayout>

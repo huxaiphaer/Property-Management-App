@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <text.customisation.MarigoldText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:textSize="25dp"
+        android:textColor="#000000"
+
+        android:text="Jomayi property App allows its users to receive notifications of what is currently taking place at jomayi"
+        android:id="@+id/textView13"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView14"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_width="394dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21">
+
+
+        <Switch
+            android:paddingLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Push Notifications           "
+            android:id="@+id/switch1" />
+    </LinearLayout>
+
+
+</LinearLayout>

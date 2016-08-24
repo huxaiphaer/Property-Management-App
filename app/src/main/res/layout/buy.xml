@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:background="#363131"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal" />
+
+    <GridView
+        android:id="@+id/list"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:numColumns="1"
+        >
+    </GridView>
+
+
+
+
+
+</LinearLayout>

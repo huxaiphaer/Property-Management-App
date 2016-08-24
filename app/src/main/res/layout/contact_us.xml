@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <text.customisation.MarigoldText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking to book and need help? Our crack team of  support specialists is here 24/7 to make sure your plans go off without a hitch."
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingTop="60dp"
+        android:paddingLeft="30dp"
+        android:textSize="25dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView3" />
+</LinearLayout>
